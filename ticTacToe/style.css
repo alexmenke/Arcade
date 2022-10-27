@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+* {
+    font-family: 'Bungee', cursive;
+    color: rgb(217, 0, 0);
+}
+
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    font-style: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+form {
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 46rem;
+    position: absolute;
+    justify-content: space-evenly;
+    top: 9rem;
+    padding: 10px 24px;
+    border-radius: 10px;
+    border: 5px solid rgb(127, 0, 0);
+    background-color: white;
+    text-align: center;
+    padding: 1rem
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+#playerX {
+    font-size: 1rem;
+    padding: 5px 12px;
+}
+
+#playerO {
+    font-size: 1rem;
+    padding: 5px 12px;
+}
+
+#startButton {
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    padding: 10px 24px;
+    background-color: white;
+    border: 3px solid rgb(217, 0, 0);
+    transition-duration: 0.4s;
+}
+
+#startButton:hover {
+    background-color: rgb(217, 0, 0);
+    color: white;
+    border: 3px solid rgb(127, 0, 0);
+}
+
+button {
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    padding: 10px 24px;
+    background-color: white;
+    border: 3px solid rgb(217, 0, 0);
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: rgb(217, 0, 0);
+    color: white;
+    border: 3px solid rgb(127, 0, 0);
+}
+
+#gameStatus {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 16rem;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    position: absolute;
+    top: 21rem;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    width: 40rem;
+    height: 40rem;
+    background-color: white;
+    font-size: 10rem;
+    text-align: center;
+}
+
+.cell{
+    border: 5px solid rgb(127, 0, 0);
+}
+
+@media only screen and (max-width: 844px) {
+    header {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        font-style: bold;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    form {
+        font-size: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        width: 20rem;
+        position: absolute;
+        justify-content: space-evenly;
+        top: 5rem;
+        padding: 10px 24px;
+        border-radius: 10px;
+        border: 5px solid rgb(127, 0, 0);
+        background-color: white;
+        text-align: center;
+        padding: 1rem
+    }
+
+    #gameStatus {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 15rem;
+        font-size: 1rem;
+        color: white;
+        text-align: center;
+    }
+
+    main {
+        display: grid;
+        position: absolute;
+        top: 18.5rem;
+        grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+        width: 23rem;
+        height: 23rem;
+        background-color: white;
+        font-size: 5rem;
+        text-align: center;
+    }
+}
+
+

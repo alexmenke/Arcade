@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <header>
+        <h1 class = "gameTitle">Tic-Tac-Toe</h1>
+    </header>
+
+    <form id = "playerForm">
+        <div>
+            <label for = "PlayerX">X =</label>
+            <input type = "text" placeholder = "Enter player name here" name = "Player1" id = "playerX">
+        </div>
+        <div>
+            <label for = "PlayerO">O =</label>
+            <input type = "text" placeholder = "Enter player name here" name = "Player2" id = "playerO">
+        </div>
+        <input type = "submit" id = "startButton" value = "Start Game">
+        <button id = "resetButton">Reset Game</button>
+    </form>
+    <div><h2 id = "gameStatus"></h2></div>
+    <main class = "gameBoard">
+        <div class = "cell" data-cell-index = "0"></div>
+        <div class = "cell" data-cell-index = "1"></div>
+        <div class = "cell" data-cell-index = "2"></div>
+
+        <div class = "cell" data-cell-index = "3"></div>
+        <div class = "cell" data-cell-index = "4"></div>
+        <div class = "cell" data-cell-index = "5"></div>
+
+        <div class = "cell" data-cell-index = "6"></div>
+        <div class = "cell" data-cell-index = "7"></div>
+        <div class = "cell" data-cell-index = "8"></div>
+    </main>
+    <br>
+    <script src = "app.js"></script>
+</body>
+</html>
